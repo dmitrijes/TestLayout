@@ -48,10 +48,14 @@ class FrameViewController: UIViewController {
         blackView.backgroundColor = UIColor.black
         self.view.addSubview(blackView)
         
-        orangeFrame = CGRect(x: 8, y: view.frame.size.height - (tabBarController?.tabBar.frame.height)! - 28, width: view.frame.size.width - 16, height: 20)
+        let tabSize = tabBarController?.tabBar.frame.height ?? 0
+        orangeFrame = CGRect(x: 8, y: view.frame.size.height - tabSize - 28, width: view.frame.size.width - 16, height: 20)
         orangeView = UIView(frame: orangeFrame)
         orangeView.backgroundColor = UIColor.orange
         self.view.addSubview(orangeView)
+        
+        print("GREEN HEIGHT\(blackView.frame.origin.y)")
+        print("GREEN WIDTH\(blackView.frame.origin.x)")
         
     }
     
@@ -65,29 +69,12 @@ class FrameViewController: UIViewController {
     
     func updateView(size: CGSize) {
         
-        greenView.removeFromSuperview()
-        greenFrame = CGRect(x: 60, y: size.height/2 - 50, width: size.width - 120, height: 100)
-        greenView = UIView(frame: greenFrame)
-        greenView.backgroundColor = UIColor.green
-        self.view.addSubview(greenView)
+        greenView.frame = CGRect(x: 60, y: size.height/2 - 50, width: size.width - 120, height: 100)
+        redView.frame = CGRect(x: 8, y: 8, width: size.width/2 - 8, height: greenView.frame.origin.y - 24)
+        blackView.frame = CGRect(x: size.width - 80, y: greenView.frame.origin.y + 108, width: 80, height: 50)
+        let tabSize = tabBarController?.tabBar.frame.height ?? 0
+        orangeView.frame = CGRect(x: 8, y: size.height - tabSize - 28, width: size.width - 16, height: 20)
         
-        redView.removeFromSuperview()
-        redFrame = CGRect(x: 8, y: 8, width: size.width/2 - 8, height: greenView.frame.origin.y - 24)
-        redView = UIView(frame: redFrame)
-        redView.backgroundColor = UIColor.red
-        self.view.addSubview(redView)
-        
-        blackView.removeFromSuperview()
-        blackFrame = CGRect(x: size.width - 80, y: greenView.frame.origin.y + 108, width: 80, height: 50)
-        blackView = UIView(frame: blackFrame)
-        blackView.backgroundColor = UIColor.black
-        self.view.addSubview(blackView)
-        
-        orangeView.removeFromSuperview()
-        orangeFrame = CGRect(x: 8, y: size.height - (tabBarController?.tabBar.frame.height)! - 28, width: size.width - 16, height: 20)
-        orangeView = UIView(frame: orangeFrame)
-        orangeView.backgroundColor = UIColor.orange
-        self.view.addSubview(orangeView)
         
     }
     
