@@ -215,7 +215,7 @@
                         <constraints>
                             <constraint firstItem="Svw-AV-hWN" firstAttribute="leading" secondItem="gAw-lx-p04" secondAttribute="leading" constant="60" id="8M0-Nk-97H"/>
                             <constraint firstItem="Svw-AV-hWN" firstAttribute="top" secondItem="dmO-D6-GQV" secondAttribute="bottom" constant="16" id="Ccf-r8-1sg"/>
-                            <constraint firstItem="dmO-D6-GQV" firstAttribute="trailing" secondItem="gAw-lx-p04" secondAttribute="centerX" constant="1" id="D0U-gY-yNm"/>
+                            <constraint firstItem="dmO-D6-GQV" firstAttribute="trailing" secondItem="gAw-lx-p04" secondAttribute="centerX" id="D0U-gY-yNm"/>
                             <constraint firstAttribute="trailing" secondItem="eki-j7-1ey" secondAttribute="trailing" constant="8" id="DrP-hK-KgB"/>
                             <constraint firstItem="dmO-D6-GQV" firstAttribute="leading" secondItem="gAw-lx-p04" secondAttribute="leading" constant="8" id="IlI-Da-btD"/>
                             <constraint firstItem="FC3-K9-vRo" firstAttribute="top" secondItem="Svw-AV-hWN" secondAttribute="bottom" constant="8" id="L3X-i1-mka"/>
