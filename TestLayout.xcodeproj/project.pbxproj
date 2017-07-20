@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930F73601F20F7E90090F725 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930F735F1F20F7E90090F725 /* LabelViewController.swift */; };
 		9358B9E31F20BE23003E4CFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358B9E21F20BE23003E4CFE /* AppDelegate.swift */; };
 		9358B9E51F20BE23003E4CFE /* FrameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9358B9E41F20BE23003E4CFE /* FrameViewController.swift */; };
 		9358B9E81F20BE23003E4CFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9358B9E61F20BE23003E4CFE /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930F735F1F20F7E90090F725 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		9358B9DF1F20BE23003E4CFE /* TestLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9358B9E21F20BE23003E4CFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9358B9E41F20BE23003E4CFE /* FrameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				9358B9E91F20BE23003E4CFE /* Assets.xcassets */,
 				9358B9EB1F20BE23003E4CFE /* LaunchScreen.storyboard */,
 				9358B9EE1F20BE23003E4CFE /* Info.plist */,
+				930F735F1F20F7E90090F725 /* LabelViewController.swift */,
 			);
 			path = TestLayout;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			files = (
 				9358B9E51F20BE23003E4CFE /* FrameViewController.swift in Sources */,
 				9358B9E31F20BE23003E4CFE /* AppDelegate.swift in Sources */,
+				930F73601F20F7E90090F725 /* LabelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +305,7 @@
 				9358B9F31F20BE23003E4CFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
